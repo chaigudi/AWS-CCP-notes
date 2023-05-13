@@ -1,0 +1,512 @@
+Compute: pay for Compute time 
+Storage: pay for data stored in cloud. 
+Data tranfer: Data tramfor IN is free Data transfor OUT is metered.
+
+
+Aws Global infrastructure
+
+Aws Regions
+Aws Availability Zones
+Aws Data Centers
+Aws edge Locations
+Aws region
+
+Why Choose a region?
+
+Region: Where we are going to deploy our application or use services from?
+Compliance: India government asking to have data in india only
+proximity: Users or Customers of your application belong to a region then Latency in reduced if we deploy there
+
+Availability zone:
+
+Each region has multiple availability
+
+Zones (3to 6)
+
+Aws Region Sydney: Ap-Southeast-2
+
+has
+
+3 Availability
+
+Southeast
+
+A
+
+26
+
+Seperate from each
+
+- Not all region. feruias will be available in a To Check use Region table.
+
+Shared Responsibility Model:
+
+Customer Responsibility for Security IN the Cloud.
+
+Aws: Responsibility for Security Of the Cloud.
+
+Customer data, 1 Dentity & Access irgint, firewal, networking Configuration, diant Side encryption, authentication, Networking traffic protection etc
+
+Softrare, Compute, Storage, DB, Regions, Edge Location etc
+
+IAM is a giche Service
+TAM: Edentity & Access mariagerat,
+
+User: people within your organisation. Groups: Contains only users, to multiple groups. A user Com
+
+Rales: pdicies/permissions to given to Services Policies: users or groups can be avigmed JSON documents called policies (ar permissions to access Services.
+
+The User Created with IAM Can login in 1 AM User Login and will be Misible as
+
+username@root account on
+
+like
+
+changudi @ Tiger arabipes.
+
+AWS Console
+
+1 AM policies inheritance :-
+
+lue attach a of policy to a group then all its members have Same policy.
+
+I Am policy Structure -
+
+403
+
+© Version; policy language version. Id: Identifier for the policy (optional)
+
+Statement Statements
+
+Effect: allows or denics. principal: To which acc/user/sole allows or denies. D
+
+this policy is applying to Actions list of actions this policy
+
+Resource; list of resources this policy is qplied to
+
+Am password policy for sccurity of accounts steps like: upper alphanumeric, mement reuse cte & MFA (Google Auth)
+3 diff ways to
+
+acas AWS
+
+via Console (pamoord + MFA) I winth CLI (protected by Access kaps) AWS Guia terminal ma SDA (protected by Access keys)
+
+→ALOS CLI open Source
+
+(https://github.com/aws/aws-CLI
+
+→ Aws SDX Can be cumbedded with application
+
+AWS CLI is built on AWS SDK for python Aws Sole Com interact with AWS programmatically
+
+Sustalling
+
+-
+
+> aws
+
+Carl Waps-
+
+150 cinzip awselive.zip
+
+Sudo laws/install.
+
+--Version.
+
+AWS
+
+Cloudshell Not
+
+available in all
+
+regions. Free to use
+
+It is a terminal in the cloud of aws
+
+in Aws Console.
+
+IAM Roles:- Just like policies to users, roles are to Aws Services
+
+YAM Security Tools
+
+IAM Credentials Report द report listing all users their credential Status
+
+1 AM Access advisor
+
+My shows service permissions granted to a user and when ore
+
+IAM Best practices.
+
+Don't use root account except al signups. users to group, policies to groups.
+
+→ Strong password + MFA.
+
+- Never share access keys.
+
+Shared Responsibility Model of IAM
+
+Summary:
+
+Users: Mapped to physical wer
+
+1: Contains users only Grays
+
+policies: JSON document that outlines permissions
+
+Stray Security? MFA + password
+
+ukoll
+
+Audit:
+
+1AM Creditting Reports & IAM Access advisor
+
+->
+-Billing
+
+Name>
+
+management
+
+Bills: Shows charges for Various Senters, free tiers Shows how much we und free tier
+
+Budgets We Can set alerts.
+
+EC2 Basics: Pay per Elastic Compute ner second.. cloud. → To Bootstrap over instances we use User data
+
+from additional Configuration__. Bootstrap launching Commands when mochine ->
+
+Stats user data run outh root user, use Sudo. ->
+
+→ private IPv4 in ured to from it internally. Communicate with &
+
+we stop & restart public IP of it may change private IP Stays the Same
+
+Console 7
+
+CC2 instances.info
+
+in aws cloud.
+
+Shows present
+
+Security groups: firewall: by they contain only allow video rules
+
+→ fear if inbound rules has our ip address then only Time out occurs. we Coun access EC2 instance, else
+
+→ Sec Group Can be attached to multiple ECZ → locked down to a region / VPC combination
+
+if Timeout SG issue.
+
+of Connection refused → apply error | Ecz. not launched.
+
+→ By default: All in bound blaked All out bound authorized.
+
+used intonces
+
+L
+
+Regardless of ip of our instances, if we attach the SG attached to atc2 we acass it.
+
+ie if EC2-A has SGI in inbound SGI is attached to EC2-B then
+
+and
+
+Ec2 +B can access EC2-A regardless of (p. that we should have specified in inbound.
+
+PORTS:
+
+SSH
+
+12122
+
+80
+
+(Secure Shell)
+
+https
+
+43
+
+SPTP SMTP
+
+21 (file transfer protocol) 22 upload files uring 554
+
+3389
+
+into a Windows
+
+instance)
+
+Remote
+
+SS#
+
+cam publici
+
+password
+
+or
+
+-i apem ecz publicip
+
+ecz-user@
+
+Sch
+
+windows download putty & putty kay gan
+
+Clarge ppm topple file in keygen
+
+Hygen > load > Sowe as privatilay
+
+> •ppk file
+
+putty & Connect
+
+IAM role for EC2
+
+Roles are policies/permissions for Services
+
+- So if we attach Amreadacess to a EC2 instance then we can see the list of wers in the EC2 iam list-users.
+
+
+[62 instamas purchasing of tions
+
+201
+
+(6) on demand instances's predictable pricing Reserved (13 years) & long} Workloads. (not physical Saving plans: commited to amount
+
+later Reserud
+
+Ⓒ spot instances & short workleed, cheap. 90/doct Dedicated Hosts: book an entire physical Sexsur,
+
+expensive
+
+Dedicated here no other Customers will
+
+Fustances.
+
+Share
+
+your Capacity reservations: Capacity pexruered in any AZ mance (not played) wyly Prun in a Vpc on hardware dedicated to a Customer
+
+EC2 Sustance Storage:-
+
+like. network USB pendrive
+
+EBS: Elastic Block Store. is a network drive You can they ran. attach to 10 to your instances while
+
+Allows instances to persist data, even after termination
+
+> Can be mounted to one instance at a time. ~ Bound to specific availability Zone
+
+a
+
+n
+
+2
+
+s
+
+→ EBS can be moved to other zones with
+
+We can delete on termination of EC2 by EBS Volume ^ checking the box.
+
+EBS multiattach feature for 10, and ioz Volumes in out of scope.
+
+→ we can attach multiple EBS to a instance.
+
+EBS-Snapshots-
+
+→ Ballcup of aEBS → can be used to restore a ERSvolume in a same or diff availability zone & attach it to a EC2.
+
+→ it takes some time upto 3 days to restore it
+
+we delete snapshot it will be in recycle bin for 1 year
+
+AMI Overview:
+
+Amazon Machine image.
+
+Customized EC2 instance, can be built for a Specific region.
+
+- we com build our own AMI -) can be bought in Amazon marketplace-
+
+AMI image Say we need to create a day image f a EC2 at any point of time to use it later → EC2 intance Select > image & templates >
+
+Greate image name of options selections.
+
+→ while launching instances we can un that image to AM!
+
+Ecz image Builder: Automate Creation of VM or Container images unlike
+
+EC2 image Boulder Builder EC2 instan New Am1 →→ TestEC2 intance
+
+Very Lary
+
+to build our own.
+
+image of Am
+
+which we can use to build a EC2 intance EC2 Eustance Stone EBS is limited performance
+
+q need high performace hardware disk, we use EC2 instance Store which has
+
+Potter 1/0 performance
+
+They are not persistant storage, gone if torminated-
+
+(i) Good for buffer/cache/ temp contut
+
+short term
+
+EFS- Elastic File System
+
+usage for longterm
+
+EBS
+
+(xcan be mounted on 100s of EC2 at a time
+
+EFS works only with Linux EC2 & also for multi-AZ.
+
+t
+
+AM)
+
+stance
+
+EBS VS EFS
+
+-> EFS can be and as a shared file System accus muli-AL where as EBS only in 1 AZ, 1 EC2 Connected Greate Snapshot 2 EFS Infrequent 84 une it in another AZ Acars (EPSIA) Same as Efs but less cost as we
+
+use it infrequently. We need to set
+
+lifecycle policy to move file from EFS to EFS 1A if they are not used frequently
+
+Shared Responsibily Replication of deta
+
+- Selting backup / encuphin Es Aws Resp or faully hardware
+
+Amazon FSx
+
+managed service which gets 3rd party high-performance file Systems on Aws.
+
+Amagon PS for Windows file Server
+
+Seppo A fully managed, highly, reliable, and scalable Windows native shared fs.
+
+Amogon FSix for Lustre (for liver fs). Is A fully managed, high-performace, scabble
+
+file storage for ligh performance Computay (Ape)
+
+Elastic load balancing Horizontal Scalability.
+
+Vertical Scalability: Increasing Size/Storage a Same/single, instance / service-
+
+for EC2:
+
+from 12. nano
+
+0.5G of RAM, 1 epo
+
+0124b/meld -12TB of RAM, 648Cp
+
+Load balancer:
+
+→ Publicly visible. - Behind maintains multiple services.
+
+4 kinds of LB ( Application (http/https)
+
+for high performance traffic
+
+Larger 7 •Network LB (TCP) Lagny
+
+for: TCP, UDP, ATLS Gateway LB( dayer 2)
+
+Classic load balaar Ly will be remind
+
+Voutes traffic to firewell (for intrusion detectin)
+
+pe
+
+Auto scaling group
+
+load on websites & apples can change → can scale out to match increased load. - Can scale in to match decreased load
+
+Strategies: 1. Manual Scaling
+
+2. Dynamic scaling
+
+3 predictive scaling d
+
+Amazon 53 : Bucket 9 Enfinitaly scaling Storage unique name I Every fill has a key- full path is
+
+S3: //my-bucket/ my file. bet.
+
+→ 53 eventhough given a global view are created in a AWS region.
+
+e
+
+user-based: IAM policies: which user can access.
+
+Resource bands -Bucal polices: how to make $3.
+
+Buckets public.
+
+• Object Access Control List (ACL) Buclat Accus Control List (ACL)
+
+→ Any one Com access 53 object if user 1 AM permissions Allow it
+
+resource policy Allows it.
+
+and there's no explicit DENY.
+
+policies are JSON Based.
+
+- for public access: change Braket pelicans be
+
+by going to permitions in bucket & unticl
+
+Block all public acass
+
+53-Versining
+
+We com Version files in 53, enabled at bucket -> Same Overwrite will create ternin.
+
+→ for deletion, even if we select Object and delete the delete marker is set (ver)
+
+which makes it a version and if we delete that too file is permanently deleted.
+
+S3 Replication
+
+SCRR: Gross Region Rep. SRR: Same
+
+→ first, evable versioning in Source & destinations - copy happens asynchrononly.
+
+Go to management of 53 Budut & set replication rules.
+
+$3
+
+53 Storage classes
+
+633 Standard: normal 116 acess: Lover Cost
+
+опредрасст One gone infreq: Single AZ
+
+Glacier: for backup fardheine, fast Glacier flexible little slow, same as Glaan.
+
+53 intelligt tienig! for Small monthly monitorry.
+
+no retrieval charge in las
+
+be → Storage Classes Can set to u objed in bucket & can be charged are to change Over time
+
+Glacia deep archive, cost effective, for archive data. $3 encryption
+
+no encryption.
+
+Sewer Side encryption (Server everypts file after receiving it)
+
+Client side encryption (client encrypts before uploading it)
